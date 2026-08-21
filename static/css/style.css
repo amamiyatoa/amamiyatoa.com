@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --back-color: #F7F9FA;
+    --string-color: #2b5fb9;
+    --accent-color: #6BA3C8;
+}
+
+
+body {
+    background-color: var(--back-color);
+    color: var(--string-color);
+    border: solid 5px var(--accent-color);
+    border-radius: 10px;
+}
+
+@media (min-width : 768px) {
+    .header {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+}
