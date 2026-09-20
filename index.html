@@ -21,6 +21,9 @@
             <div class="menu">
                 <ul class="menu">
                     <li class="menuItem">
+                        <div id="time"></div>
+                    </li>
+                    <li class="menuItem">
                         <a href="#" id="menuLinkBox">Home</a>
                     </li>
                     <li class="menuItem">
@@ -29,8 +32,8 @@
                     <li id="menuListBox" class="menuItem">
                         <a href="#" id="menuLinkBox">Wish List</a>
                         <ul id="detailMenuItem" class="invisibleLink">
-                            <li class="detailMenuItems">Booth</li>
-                            <li class="detailMenuItems">Amazon</li>
+                            <li class="detailMenuItems" id="boothWishList">Booth</li>
+                            <li class="detailMenuItems" id="amazonWishList">Amazon</li>
                         </ul>
                     </li>
                 </ul>
@@ -46,16 +49,16 @@
                             <div class="profiles">
                                 <img src="assets/myIcon.png" alt="my icon">
                                 <div class="introProfile">
-                                    <h3 class="name">Name: "雨宮とあ"</h3>
-                                    <p class="intro">ご閲覧ありがとうございます！<br>
-                                        普段はVRChatで活動をしている<span class="nameHighlight">雨宮とあ</span>と申します！<br><br>
-                                        <span class="highWeightStyle">&lt;Hobby&gt;</span><br>
+                                    <h3 class="name">Hello, World!!</h3>
+                                    <p class="intro">ご閲覧ありがとうございます！</p>
+                                    <p class="intro">普段はVRChatで活動をしている<span class="nameHighlight">雨宮とあ</span>と申します！</p>
+                                    <p class="intro"><span class="highWeightStyle">&lt;Hobby&gt;</span></p>
                                         <span class="hobbyStyle">
                                             ・ゲーム<br>
                                             ・自作PC関連<br>
                                             ・プログラミング<br>
                                             ・サーバー運用<br>
-                                            ・アニメ・EDM<br><br>
+                                            ・アニメ・EDM
                                         </span>
                                     </p>
                                     <p class="useLang">
@@ -63,10 +66,9 @@
                                     </p>
                                     <span class="weightStyle">
                                         <ul>
-                                            <li>・HTML5,CSS</li>
+                                            <li>・HTML5,CSS3</li>
                                             <li>・JavaScript</li>
                                             <li>・Java</li>
-                                            <li>・Rust(勉強中)</li>
                                         </ul>
                                     </span>
                                 </div>
@@ -78,7 +80,79 @@
                         <section class="sectSetting">
                             <h1 class="title"><span class="titlePad">About Me</span></h1>
                             <div class="sectMainContent">
-                                <h3 class="miniTitle">あなたはだーれ？</h3>
+                                <div class="sectTitleBorder">
+                                    <h2 class="miniTitle">あなたはだーれ？<span class="miniTitleEng">who are you</span></h2>
+                                </div>
+                                <div class="sectContent">
+                                    <p class="contentText">
+                                        普段はVRChatで活動を行っている人です。毎朝のおはようツイートやVRChat内での雑談、景観ワールドの探索や新着ワールド巡りなどを行っております。
+                                    </p>
+                                    <p class="contentText">
+                                        私は<span class="textHights">2024/08/13</span>にVRChatに初参加し、当時はあまり良いスペックとは言えないPCを使用しておりました。
+                                    </p>
+                                    <div class="pcTable">
+                                        <table class="columnParent">
+                                            <caption>
+                                                旧ノートPC構成
+                                            </caption>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pcColumn">CPU</th>
+                                                    <th class="pcColumn">Ryzen5 6600H</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pcColumn">GPU</th>
+                                                    <th class="pcColumn">GeForce GTX 1650</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pcColumn">RAM</th>
+                                                    <th class="pcColumn">S.O.DIMM DDR5 4800MT/s 8GB&times;2</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                        <table class="columnParent">
+                                            <caption>現メインPC構成</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pcColumn">CPU</th>
+                                                    <th class="pcColumn">Ryzen7 7800X3D</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pcColumn">GPU</th>
+                                                    <th class="pcColumn">Radeon RX 7900XT</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pcColumn">RAM</th>
+                                                    <th class="pcColumn">DIMM DDR5 4800MT/s 16GB&times;2</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <p class="contentText">
+                                        これほどの性能アップをしてもなお、VRChatのワールドによっては30FPSや20FPSになってしまうので...いくら性能上げても足りなくて絶望してます...
+                                    </p>
+                                </div>
+                                <div class="sectTitleBorder">
+                                    <h2 class="miniTitle">スキル・趣味について<span class="miniTitleEng">my skills, language and hobbies</span></h2>
+                                </div>
+                                <div class="sectContent">
+                                    <div class="skillTable">
+                                        <table class="iconTable">
+                                            <tr>
+                                                <th scope="col">Items</th>
+                                                <th scope="col">Skill Icon</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Develop</th>
+                                                <td><img src="https://skillicons.dev/icons?i=vscode,eclipse,git,ubuntu,nginx,docker&theme=light" alt="vscode,eclipse,git,ubuntu,nginx,docker" class="skillImgSet"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Language</th>
+                                                <td><img src="https://skillicons.dev/icons?i=html,css,js,java&theme=light" alt="html,css,js,java" class="skillImgSet"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </article>
