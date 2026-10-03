@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="雨宮とあです！VRChatに生息する一般人です！">
     <script src="static/js/index.js"></script>
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="shortcut icon" href="assets/myIcon.png" type="image/x-icon">
     <title>雨宮とあの開発所</title>
 </head>
 <body>
 
     <div class="container">
+        <div id="heightScanner"></div>
 
-        <header class="header">
+        <div id="headerWrapper">
+            <header class="header">
 
-            <div class="image">
-                <img src="assets/logo.png" alt="site logo">
-            </div>
+                <div class="image">
+                    <img src="assets/logo.png" alt="site logo">
+                </div>
 
-            <div class="menu">
-                <ul class="menu">
-                    <li class="menuItem">
-                        <div id="time"></div>
-                    </li>
-                    <li class="menuItem">
-                        <a href="#" id="menuLinkBox">Home</a>
-                    </li>
-                    <li class="menuItem">
-                        <a href="#" id="menuLinkBox">Contact</a>
-                    </li>
-                    <li id="menuListBox" class="menuItem">
-                        <a href="#" id="menuLinkBox">Wish List</a>
-                        <ul id="detailMenuItem" class="invisibleLink">
-                            <li class="detailMenuItems" id="boothWishList">Booth</li>
-                            <li class="detailMenuItems" id="amazonWishList">Amazon</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </header>
+                <div class="menu">
+                    <ul class="menu">
+                        <li class="menuItem">
+                            <div id="time"></div>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#" id="menuLinkBox">Home</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#" id="menuLinkBox">Contact</a>
+                        </li>
+                        <li id="menuListBox" class="menuItem">
+                            <a href="#" id="menuLinkBox">Wish List</a>
+                            <ul id="detailMenuItem" class="invisibleLink">
+                                <li class="detailMenuItems" id="boothWishList">Booth</li>
+                                <li class="detailMenuItems" id="amazonWishList">Amazon</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
 
         <div class="content">
             <main>
@@ -49,7 +54,7 @@
                             <div class="profiles">
                                 <img src="assets/myIcon.png" alt="my icon">
                                 <div class="introProfile">
-                                    <h3 class="name">Hello, World!!</h3>
+                                    <h3 class="name">&gt; Hello, World!!<span class="consoleCursor">|</span></h3>
                                     <p class="intro">ご閲覧ありがとうございます！</p>
                                     <p class="intro">普段はVRChatで活動をしている<span class="nameHighlight">雨宮とあ</span>と申します！</p>
                                     <p class="intro"><span class="highWeightStyle">&lt;Hobby&gt;</span></p>
@@ -133,24 +138,110 @@
                                     </p>
                                 </div>
                                 <div class="sectTitleBorder">
-                                    <h2 class="miniTitle">スキル・趣味について<span class="miniTitleEng">my skills, language and hobbies</span></h2>
+                                    <h2 class="miniTitle">趣味<span class="miniTitleEng">my hobbies</span></h2>
                                 </div>
                                 <div class="sectContent">
                                     <div class="skillTable">
                                         <table class="iconTable">
+                                            <caption class="iconTableCaps">My Skills</caption>
                                             <tr>
                                                 <th scope="col">Items</th>
                                                 <th scope="col">Skill Icon</th>
+                                                <th scope="col">Details</th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Develop</th>
-                                                <td><img src="https://skillicons.dev/icons?i=vscode,eclipse,git,ubuntu,nginx,docker&theme=light" alt="vscode,eclipse,git,ubuntu,nginx,docker" class="skillImgSet"></td>
+                                                <td class="skillTablePad"><img src="https://skillicons.dev/icons?i=windows,vscode,eclipse,git,github,ubuntu,nginx,docker,cloudflare,&theme=light&perline=6" alt="vscode,eclipse,git,ubuntu,nginx,docker"></td>
+                                                <td class="skillTablePad">VSCode,Eclipse,Git,<br>Ubuntu,Nginx,<br>Docker,Cloudflare</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Language</th>
-                                                <td><img src="https://skillicons.dev/icons?i=html,css,js,java&theme=light" alt="html,css,js,java" class="skillImgSet"></td>
+                                                <td class="skillTablePad"><img src="https://skillicons.dev/icons?i=html,css,js,java&theme=light" alt="html,css,js,java"></td>
+                                                <td class="skillTablePad">HTML5,CSS3,<br>JavaScript,Java</td>
                                             </tr>
                                         </table>
+                                        <table class="iconTable">
+                                            <caption class="iconTableCaps">My Hobbies</caption>
+                                            <tr>
+                                                <th scope="col">Items</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tech/Dev</th>
+                                                <td class="skillTablePad">自作PC,自宅サーバー運用,プログラミング,web開発</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Played Game</th>
+                                                <td class="skillTablePad">
+                                                    Blue Archive, 学園アイドルマスター, Stella Sora, Apex Legends,<br>
+                                                    Beat Saber等
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">VR/Creative</th>
+                                                <td class="skillTablePad">VRChat,画像編集(VRChatの写真編集)</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    
+                    <article class="mainArticle bottoms">
+                        <section class="sectSetting">
+                            <h1 class="title"><span class="titlePad">Connect</span></h1>
+                            <div class="sectMainContent">
+                                <div class="sectTitleBorder">
+                                    <h2 class="miniTitle">リンク先<span class="miniTitleEng">Social Links</span></h2>
+                                </div>
+                                <div class="sectContent">
+                                    <p class="contentText">
+                                        下記にて、私の活動場所のリンクを設置しておりますので、ご興味があればご覧ください！
+                                    </p>
+                                    <div class="linkTable">
+                                        <table class="accountLink">
+                                            <tr>
+                                                <th scope="col">Icon</th>
+                                                <th scope="col">Link</th>
+                                                <th scope="col">Note</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img src="https://cdn.simpleicons.org/x" alt="X icon">
+                                                </th>
+                                                <td id="">
+                                                    <a href="https://x.com/amamiyatoa" target="_blank" rel="noopener noreferrer" class="account_img">
+                                                        Xアカウントはこちらから
+                                                    </a>
+                                                </td>
+                                                <td>VRChatでの写真を投稿したりおはツイをしています</td>
+                                            </tr> 
+                                            <tr>
+                                                <th scope="row"><img src="https://cdn.simpleicons.org/vrchat" alt="VRChat icon"></th>
+                                                <td>
+                                                    <a href="https://https://vrchat.com/home/user/usr_b606eaaf-84b5-4ac7-94b4-49fb134805ad" target="_blank" rel="noopener noreferrer" class="account_img">
+                                                        VRChatアカウントはこちらから
+                                                    </a>
+                                                </td>
+                                                <td>VRChatのフレンド申請はお気軽にどうぞ</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="https://cdn.simpleicons.org/github" alt="GitHub icon"></th>
+                                                <td>
+                                                    <a href="https://github.com/amamiyatoa" target="_blank" rel="noopener noreferrer">
+                                                        GitHubアカウントはこちらから
+                                                    </a>
+                                                </td>
+                                                <td>各種制作物はこちらに載せてあります</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="link_wrapper">
+                                        <div class="link_x">
+                                        </div>
+                                        <div class="link_vrchat">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -161,6 +252,10 @@
         </div>
 
     </div>
+
+    <footer class="footer">
+        <small>&copy; 2026 Amamiya Toa.</small>
+    </footer>
     
 </body>
 </html>

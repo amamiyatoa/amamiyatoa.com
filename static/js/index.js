@@ -4,8 +4,21 @@ window.onload = () => {
     document.body.classList.add('fade_activate');
 
     /* Header menu settings */
+    let header = document.getElementById('headerWrapper');
     let menuLinkBox = document.getElementById('menuListBox');
     let detailMenuItem = document.getElementById('detailMenuItem');
+
+    window.addEventListener('scroll', () => {
+        let heightScanner = document.getElementById('heightScanner');
+        let headerRect = heightScanner.getBoundingClientRect().top;
+        if(headerRect <= -40) {
+            header.classList.remove('headerElScrollIn');
+            header.classList.add('headerElScrollOut');
+        } else {
+            header.classList.remove('headerElScrollOut');
+            header.classList.add('headerElScrollIn');
+        }
+    });
 
     menuLinkBox.addEventListener("mouseover", () => {
         if(detailMenuItem.classList != 'visibleLink') {
