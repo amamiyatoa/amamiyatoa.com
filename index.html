@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="雨宮とあです！VRChatに生息する一般人です！">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="雨宮とあです！VRChatで活動している見習い技術者です！開発実績やウェブ制作物、各種SNSサイトへのリンクを掲載しています。" />
+    <link rel="canonical" href="https://amamiyatoa.com/" />
     <script src="static/js/index.js"></script>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="shortcut icon" href="assets/myIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="shortcut icon" href="assets/myIcon.png" type="image/x-icon" />
+
+    <!-- Open Graph / Discord / etc -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amamiyatoa.com/" />
+    <meta property="og:title" content="雨宮とあの開発所" />
+    <meta property="og:description" content="雨宮とあです！VRChatで活動している見習い技術者です！開発実績やウェブ制作物、各種SNSサイトへのリンクを掲載しています。" />
+    <meta property="og:image" content="https://amamiyatoa.com/assets/ogp.png" />
+
+    <!-- X(Twitter)-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://amamiyatoa.com" />
+    <meta property="twitter:title" content="雨宮とあの開発所" />
+    <meta property="twitter:description" content="雨宮とあです！VRChatで活動している見習い技術者です！開発実績やウェブ制作物、各種SNSサイトへのリンクを掲載しています。" />
+    <meta property="twitter:image" content="https://amamiyatoa.com/assets/opg.png" />
+
     <title>雨宮とあの開発所</title>
 </head>
 <body>
@@ -22,7 +38,7 @@
                     <img src="assets/logo.png" alt="site logo">
                 </div>
 
-                <div class="menu">
+                <nav class="menuWrapper">
                     <ul class="menu">
                         <li class="menuItem">
                             <div id="time"></div>
@@ -41,7 +57,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </header>
         </div>
 
@@ -52,30 +68,43 @@
                         <section class="topIntro">
                             <h1 class="myProfileHeader"><span class="profileHeader">Profile</span></h1>
                             <div class="profiles">
-                                <img src="assets/myIcon.png" alt="my icon">
+                                <div class="iconSetter">
+                                    <img src="assets/myIcon.png" alt="my icon" class="profileIcon">
+                                </div>
                                 <div class="introProfile">
                                     <h3 class="name">&gt; Hello, World!!<span class="consoleCursor">|</span></h3>
-                                    <p class="intro">ご閲覧ありがとうございます！</p>
-                                    <p class="intro">普段はVRChatで活動をしている<span class="nameHighlight">雨宮とあ</span>と申します！</p>
-                                    <p class="intro"><span class="highWeightStyle">&lt;Hobby&gt;</span></p>
-                                        <span class="hobbyStyle">
-                                            ・ゲーム<br>
-                                            ・自作PC関連<br>
-                                            ・プログラミング<br>
-                                            ・サーバー運用<br>
-                                            ・アニメ・EDM
-                                        </span>
+                                    <p class="intro">
+                                        はじめましての方ははじめまして！雨宮とあと申します！<span class="nb">最近はよくおはツイをしたり</span>フレンドと他愛もない会話を<span class="nb">したりしています！</span><span class="nb">メインアバターは</span>下に記載しておきます<span class="nb">のでご覧ください！</span>
                                     </p>
-                                    <p class="useLang">
-                                        <span class="highWeightStyle">&lt;Using Language&gt;</span><br>
-                                    </p>
-                                    <span class="weightStyle">
-                                        <ul>
-                                            <li>・HTML5,CSS3</li>
-                                            <li>・JavaScript</li>
-                                            <li>・Java</li>
-                                        </ul>
-                                    </span>
+                                    <div class="avatarCards">
+                                        <a href="https://booth.pm/ja/items/7328764" target="_blank">
+                                            <div class="cardWrap">
+                                                <img src="assets/avatars/avatar1.png" alt="Eku" class="avatarImage">
+                                                <div class="descriptions">
+                                                    <p class="avatarDesc"><strong>エク-Eku-</strong></p>
+                                                    <div class="avatarDesc">
+                                                        <p>
+                                                            Author: <span class="nb">sep-neko-ya</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="https://booth.pm/ja/items/8562330" target="_blank">
+                                            <div class="cardWrap">
+                                                <img src="assets/avatars/avatar2.png" alt="Kaguya" class="avatarImage">
+                                                <div class="descriptions">
+                                                    <p class="avatarDesc"><strong>輝夜-Kaguya-</strong></p>
+                                                    <div class="avatarDesc">
+                                                        <p>
+                                                            Author: <span class="nb">IKUSIA</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -90,51 +119,40 @@
                                 </div>
                                 <div class="sectContent">
                                     <p class="contentText">
-                                        普段はVRChatで活動を行っている人です。毎朝のおはようツイートやVRChat内での雑談、景観ワールドの探索や新着ワールド巡りなどを行っております。
+                                        普段はVRChatで活動を行っている人です。毎朝の<span class="nb">おはツイ</span>やVRChat内での雑談、<span class="nb">景観ワールドの探索</span>や<span class="nb">新着ワールド巡り</span>などを行っております。
                                     </p>
                                     <p class="contentText">
-                                        私は<span class="textHights">2024/08/13</span>にVRChatに初参加し、当時はあまり良いスペックとは言えないPCを使用しておりました。
+                                        私は<span class="textHights">2024/08/13</span>にVRChatに初参加しましたが、当時はあまり良いスペックとは言えないPCを<span class="nb">使用</span>しておりました。
                                     </p>
                                     <div class="pcTable">
                                         <table class="columnParent">
-                                            <caption>
-                                                旧ノートPC構成
+                                            <caption class="pcTableCaps">
+                                                現旧PC比較
                                             </caption>
                                             <thead>
                                                 <tr>
-                                                    <th class="pcColumn">CPU</th>
-                                                    <th class="pcColumn">Ryzen5 6600H</th>
+                                                    <th scope="col" class="pcColumn"></th>
+                                                    <th scope="col" class="pcColumn">CPU</th>
+                                                    <th scope="col" class="pcColumn">GPU</th>
+                                                    <th scope="col" class="pcColumn">RAM</th>
                                                 </tr>
                                                 <tr>
-                                                    <th class="pcColumn">GPU</th>
-                                                    <th class="pcColumn">GeForce GTX 1650</th>
+                                                    <th scope="row" class="pcColumn">旧</th>
+                                                    <td class="pcColumn">Ryzen5 6600H</td>
+                                                    <td class="pcColumn">GeForce GTX 1650</td>
+                                                    <td class="pcColumn">S.O.DIMM DDR5 4800MT/s 8GB&times;2</td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="pcColumn">RAM</th>
-                                                    <th class="pcColumn">S.O.DIMM DDR5 4800MT/s 8GB&times;2</th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                        <table class="columnParent">
-                                            <caption>現メインPC構成</caption>
-                                            <thead>
-                                                <tr>
-                                                    <th class="pcColumn">CPU</th>
-                                                    <th class="pcColumn">Ryzen7 7800X3D</th>
-                                                </tr>
-                                                <tr>
-                                                    <th class="pcColumn">GPU</th>
-                                                    <th class="pcColumn">Radeon RX 7900XT</th>
-                                                </tr>
-                                                <tr>
-                                                    <th class="pcColumn">RAM</th>
-                                                    <th class="pcColumn">DIMM DDR5 4800MT/s 16GB&times;2</th>
+                                                    <th scope="row" class="pcColumn">現</th>
+                                                    <td class="pcColumn">Ryzen7 7800X3D</td>
+                                                    <td class="pcColumn">Radeon RX 7900XT</td>
+                                                    <td class="pcColumn">DIMM DDR5 6000MT/s 16GB&times;2</td>
                                                 </tr>
                                             </thead>
                                         </table>
                                     </div>
                                     <p class="contentText">
-                                        これほどの性能アップをしてもなお、VRChatのワールドによっては30FPSや20FPSになってしまうので...いくら性能上げても足りなくて絶望してます...
+                                        これほどの性能アップをしてもなお、VRChatの<span class="nb">ワールド</span>によっては20～30FPSに<span class="nb">なってしまう</span>ので...いくら性能を上げても足りないので私の自作PCの<span class="nb">アップグレード</span>は<span class="nb">とどまることを</span><span class="nb">知りません...！</span>
                                     </p>
                                 </div>
                                 <div class="sectTitleBorder">
@@ -151,13 +169,30 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">Develop</th>
-                                                <td class="skillTablePad"><img src="https://skillicons.dev/icons?i=windows,vscode,eclipse,git,github,ubuntu,nginx,docker,cloudflare,&theme=light&perline=6" alt="vscode,eclipse,git,ubuntu,nginx,docker"></td>
-                                                <td class="skillTablePad">VSCode,Eclipse,Git,<br>Ubuntu,Nginx,<br>Docker,Cloudflare</td>
+                                                <td class="skillTablePad">
+                                                    <img src="https://skillicons.dev/icons?i=windows,vscode,eclipse,git,github,ubuntu,nginx,docker,cloudflare,&theme=light&perline=6" alt="vscode,eclipse,git,ubuntu,nginx,docker" class="skills">
+                                                </td>
+                                                <td class="skillTablePad">
+                                                    <span class="nb">VSCode,</span>
+                                                    <span class="nb">Eclipse,</span>
+                                                    <span class="nb">Git,</span>
+                                                    <span class="nb">Ubuntu,</span>
+                                                    <span class="nb">Nginx,</span>
+                                                    <span class="nb">Docker,</span>
+                                                    <span class="nb">Cloudflare</span>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Language</th>
-                                                <td class="skillTablePad"><img src="https://skillicons.dev/icons?i=html,css,js,java&theme=light" alt="html,css,js,java"></td>
-                                                <td class="skillTablePad">HTML5,CSS3,<br>JavaScript,Java</td>
+                                                <td class="skillTablePad">
+                                                    <img src="https://skillicons.dev/icons?i=html,css,js,java&theme=light" alt="html,css,js,java" class="skills">
+                                                </td>
+                                                <td class="skillTablePad">
+                                                    <span class="nb">HTML5,</span>
+                                                    <span class="nb">CSS3,</span>
+                                                    <span class="nb">JavaScript,</span>
+                                                    <span class="nb">Java</span>
+                                                </td>
                                             </tr>
                                         </table>
                                         <table class="iconTable">
@@ -168,18 +203,30 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">Tech/Dev</th>
-                                                <td class="skillTablePad">自作PC,自宅サーバー運用,プログラミング,web開発</td>
+                                                <td class="skillTablePad">
+                                                    <span class="nb">自作PC,</span>
+                                                    <span class="nb">自宅サーバー運用,</span>
+                                                    <span class="nb">プログラミング,</span>
+                                                    <span class="nb">web開発</span>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Played Game</th>
                                                 <td class="skillTablePad">
-                                                    Blue Archive, 学園アイドルマスター, Stella Sora, Apex Legends,<br>
-                                                    Beat Saber等
+                                                    <span class="nb">Blue Archive,</span>
+                                                    <span class="nb">学園アイドルマスター,</span>
+                                                    <span class="nb">Stella Sora,</span>
+                                                    <span class="nb">Apex Legends,</span>
+                                                    <span class="nb">Beat Saber等</span>
+                                                    <br>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">VR/Creative</th>
-                                                <td class="skillTablePad">VRChat,画像編集(VRChatの写真編集)</td>
+                                                <td class="skillTablePad">
+                                                    <span class="nb">VRChat,</span>
+                                                    <span class="nb">画像編集(VRChatの写真編集)</span>
+                                                </td>
                                             </tr>
                                         </table>
                                     </div>
@@ -188,9 +235,34 @@
                         </section>
                     </article>
                     
+                    <article class="mainArticle">
+                        <section class="sectSetting">
+                            <h1 class="title"><span class="titlePad">Gallery</span></h1>
+                            <div class="sectMainContent">
+                                <div class="sectTitleBorder">
+                                    <h2 class="miniTitle">写真<span class="miniTitleEng">Photos</span></h2>
+                                </div>
+                                <div class="sectContent">
+                                    <div class="imageResizer">
+                                        <div class="imageSetter">
+                                            <div class="imgCol1">
+                                                <img src="assets/gallery/img1.png" alt="my photo 1" class="galleryImage">
+                                                <img src="assets/gallery/img2.png" alt="my photo 2" class="galleryImage">
+                                            </div>
+                                            <div class="imgCol2">
+                                                <img src="assets/gallery/img3.png" alt="my photo 3" class="galleryImage">
+                                                <img src="assets/gallery/img4.png" alt="my photo 4" class="galleryImage">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    
                     <article class="mainArticle bottoms">
                         <section class="sectSetting">
-                            <h1 class="title"><span class="titlePad">Connect</span></h1>
+                            <h1 class="title"><span class="titlePad">Social</span></h1>
                             <div class="sectMainContent">
                                 <div class="sectTitleBorder">
                                     <h2 class="miniTitle">リンク先<span class="miniTitleEng">Social Links</span></h2>
@@ -199,43 +271,49 @@
                                     <p class="contentText">
                                         下記にて、私の活動場所のリンクを設置しておりますので、ご興味があればご覧ください！
                                     </p>
-                                    <div class="linkTable">
-                                        <table class="accountLink">
-                                            <tr>
-                                                <th scope="col">Icon</th>
-                                                <th scope="col">Link</th>
-                                                <th scope="col">Note</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <img src="https://cdn.simpleicons.org/x" alt="X icon">
-                                                </th>
-                                                <td id="">
-                                                    <a href="https://x.com/amamiyatoa" target="_blank" rel="noopener noreferrer" class="account_img">
-                                                        Xアカウントはこちらから
-                                                    </a>
-                                                </td>
-                                                <td>VRChatでの写真を投稿したりおはツイをしています</td>
-                                            </tr> 
-                                            <tr>
-                                                <th scope="row"><img src="https://cdn.simpleicons.org/vrchat" alt="VRChat icon"></th>
-                                                <td>
-                                                    <a href="https://https://vrchat.com/home/user/usr_b606eaaf-84b5-4ac7-94b4-49fb134805ad" target="_blank" rel="noopener noreferrer" class="account_img">
-                                                        VRChatアカウントはこちらから
-                                                    </a>
-                                                </td>
-                                                <td>VRChatのフレンド申請はお気軽にどうぞ</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><img src="https://cdn.simpleicons.org/github" alt="GitHub icon"></th>
-                                                <td>
-                                                    <a href="https://github.com/amamiyatoa" target="_blank" rel="noopener noreferrer">
-                                                        GitHubアカウントはこちらから
-                                                    </a>
-                                                </td>
-                                                <td>各種制作物はこちらに載せてあります</td>
-                                            </tr>
-                                        </table>
+                                    <div class="linkCard">
+                                        <div class="linkCardSetter">
+                                            <a href="https://x.com/amamiyatoa" target="_blank">
+                                                <div class="cardWrapper">
+                                                    <div class="imgSetter">
+                                                        <img src="https://cdn.simpleicons.org/x" alt="VRChat Icon" class="linkIcons">
+                                                    </div>
+                                                    <div class="linkDesc">
+                                                        <p>毎日おはツイをVRChatの写真を添えて投稿<span class="nb">しています。</span>その他に<span class="nb">お昼や夜の寝る前</span>にも<span class="nb">写真を添えて</span><span class="nb">ポストしています</span>ので良ければ<span class="nb">ご覧ください。</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="https://discord.com/users/856824787220037662" target="_blank">
+                                                <div class="cardWrapper">
+                                                    <div class="imgSetter">
+                                                        <img src="https://cdn.simpleicons.org/discord" alt="Discord Icon" class="linkIcons">
+                                                    </div>
+                                                    <div class="linkDesc">
+                                                        <p>私が普段使っているDiscordアカウントです！ご自由にDMを送っていただいて構いません！ただしプレイベートの<span class="nb">都合上</span>返信が遅れる場合や見逃す場合がありますのでご了承ください...</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="https://vrchat.com/home/user/usr_b606eaaf-84b5-4ac7-94b4-49fb134805ad" target="_blank">
+                                                <div class="cardWrapper">
+                                                    <div class="imgSetter">
+                                                        <img src="https://cdn.simpleicons.org/vrchat" alt="VRChat Icon" class="linkIcons">
+                                                    </div>
+                                                    <div class="linkDesc">
+                                                        <p>私のVRChatアカウントです！フレンド申請はお気軽に<span class="nb">お願い</span>いたします！</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="https://github.com/amamiyatoa" target="_blank">
+                                                <div class="cardWrapper">
+                                                    <div class="imgSetter">
+                                                        <img src="https://cdn.simpleicons.org/github" alt="GitHub Icon" class="linkIcons">
+                                                    </div>
+                                                    <div class="linkDesc">
+                                                        <p>私が作成した各ウェブサイト、その他プログラミング関係のものをリポジトリとして保存しています。もし<span class="nb">ご興味が</span>あればご覧ください！</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="link_wrapper">
                                         <div class="link_x">
@@ -254,7 +332,7 @@
     </div>
 
     <footer class="footer">
-        <small>&copy; 2026 Amamiya Toa.</small>
+        <small id="zip_downloader">&copy; 2026 Amamiya Toa.</small>
     </footer>
     
 </body>

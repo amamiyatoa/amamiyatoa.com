@@ -50,6 +50,7 @@ window.onload = () => {
         }
     })
 
+    //Clock Zero Padding
     function zeroPad(num) {
         let ret;
         if (num < 10){
@@ -59,7 +60,7 @@ window.onload = () => {
         }
         return ret;
     }
-
+    //Clock main code
     function nowTime() {
         let date = new Date();
         let hour = zeroPad(date.getHours());
@@ -69,5 +70,17 @@ window.onload = () => {
         document.getElementById('time').textContent = now;
     }
     setInterval(nowTime, 1000);
+
+    //Download the Sources
+    const downloaderFooter = document.getElementById('zip_downloader');
+    downloaderFooter.addEventListener('click', () => {
+        let downloadClick = window.confirm('zipをダウンロードします。よろしいでしょうか？');
+        if(downloadClick) {
+            const downloadLink = document.createElement('a');
+            downloadLink.href = './sources.zip';
+            downloadLink.download = 'Sources.zip';
+            downloadLink.click();
+        }
+    });
 
 }
