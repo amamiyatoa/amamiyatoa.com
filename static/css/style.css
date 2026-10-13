@@ -22,7 +22,7 @@ body {
 }
 .fade_activate {
     opacity: 1;
-    transition: all 950ms ease-in-out;
+    transition: opacity 950ms ease-in-out;
 }
 .nb {
     display: inline-block;
@@ -220,7 +220,7 @@ body {
                                         margin: .5rem 1rem .5rem 0;
                                         border: solid 1px #000;
                                         border-radius: 12px;
-                                        transition: 200ms ease;
+                                        transition: transform 200ms ease;
                                         .avatarImage {
                                             width: 128px;
                                             border-radius: 12px;
@@ -414,8 +414,8 @@ body {
                                         border: 1px solid #d1d5db;
                                         border-radius: 12px;
                                         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-                                        transition: 200ms ease;
                                         margin: .5rem 0;
+                                        transition: transform 200ms ease;
                                         .imgSetter{
                                             width: 128px;
                                             height: 128px;
@@ -536,6 +536,10 @@ body {
                                                     .galleryImage {
                                                         max-width: 50%;
                                                     }
+                                                    .galleryImage:hover {
+                                                        transform: scale(1.1);
+                                                        transition: transform 200ms ease;
+                                                    }
                                                 }
                                             }
                                         }
@@ -548,6 +552,7 @@ body {
                                                         width: 43px;
                                                         height: 43px;
                                                         padding: .5rem;
+                                                        margin: auto;
                                                         .linkIcons {
                                                             width: 32px;
                                                             height: 32px;

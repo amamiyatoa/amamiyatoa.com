@@ -74,7 +74,7 @@ window.onload = () => {
     //Download the Sources
     const downloaderFooter = document.getElementById('zip_downloader');
     downloaderFooter.addEventListener('click', () => {
-        let downloadClick = window.confirm('zipをダウンロードします。よろしいでしょうか？');
+        let downloadClick = window.confirm('Sources.zipをダウンロードします。よろしいでしょうか？');
         if(downloadClick) {
             const downloadLink = document.createElement('a');
             downloadLink.href = './sources.zip';
